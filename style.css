@@ -5,4 +5,301 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Red Hat Display', sans-serif;
+    /* #E31F71,#23CE6B,#212121 */
+}
+
+/* navbar */
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10px;
+}
+.navbar{
+    background-color: #212121;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.navbar .navbar-brand{
+    color: #ffff;
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding-left: 50px;
+}
+.navbar .navbar-brand:hover{
+    color: #E31F71;
+}
+.navbar .navbar-brand span{
+    color: #23CE6B;
+}
+.navbar .navbar-nav{
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+.navbar .navbar-nav .nav-item{
+    padding: 0 6px;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color: #23CE6B;
+}
+.navbar .navbar-nav .nav-item .resume-btn{
+    text-decoration: none;
+    color: #ffff;
+    background-color: #23CE6B;
+    border: none;
+    border-radius: 30px;
+    padding: 5px 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+/* navbar end */
+
+/* hero section */
+#hero-section{
+    background-color: #212121;
+    padding: 100px 0;
+    color: #fff;
+}
+.hero-text .p-hello{
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.hero-text h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+}
+.hero-text .p-skill{
+    color: #23CE6B;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 9px;
+    font-weight: 700;
+}
+.hero-text .p-experience{
+    font-weight: 500;
+}
+#hero-section img{
+    width: 600px;
+}
+.hero-text .contact-btn{
+    text-decoration: none;
+    color: #ffff;
+    background-color: #23CE6B;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+.hero-text .contact-btn:hover{
+    color: #23CE6B;
+    background-color: #fff;
+}
+/* hero section end */
+
+/* about me */
+#about-me{
+    background-color: #212121;
+    color: #fff;
+}
+#about-me h2{
+    margin: 0;
+    margin-bottom: 10px; 
+}
+.about-hr{
+    margin: 0;
+    width: 9rem;
+    border: none;
+    border-bottom: 2px solid #0000ff;
+    margin-bottom: 20px;
+}
+#about-me p{
+    font-size: 18px;
+    font-weight: 600;
+}
+#about-me .skill-icon img{
+    width: 38px;
+}
+.my-main{
+    font-weight: 600;
+    color: #23CE6B;
+    margin: 25px 0;
+}
+
+/* my portfolio */
+#portfolio{
+    background-color: #212121;
+    padding: 100px 0;
+    color: #fff;
+}
+#portfolio h1{
+    margin-bottom: 100px;
+}
+#portfolio .card{
+    background-color: #2b2b2b;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px;
+}
+#portfolio .card:hover{
+    animation: cardanim 2s linear infinite;
+}
+#portfolio .fa-github{
+    font-size: 25px;
+    color: #000000;
+}
+#portfolio h4{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+#portfolio .tech{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+#portfolio .tech li{
+    color: #dadada;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+@keyframes cardanim{
+    0%{
+        background-color: #2b2b2b;
+    }
+    50%{
+        background-color: #E31F71;
+    }
+    100%{
+        background-color: #23CE6B;
+    }
+}
+
+/* contact */
+#contact{
+    background-color: #212121;
+    padding: 100px 0;
+}
+#contact h1{
+    color: #fff;
+    text-align: center;
+}
+#contact p{
+    color: #23CE6B;
+    font-weight: 600;
+    font-size: 16px;
+}
+#contact .get-touch{
+    margin-top: 100px;
+}
+#contact .get-touch h4{
+    color: #fff;
+    font-weight: 700;
+}
+#contact form input{
+    background: transparent;
+    border-radius: 12px;
+}
+#contact form input::placeholder{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+}
+#contact form textarea{
+    background: transparent;
+    border-radius: 12px;
+}
+#contact form textarea::placeholder{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+}
+.form-background{
+    background: transparent;
+}
+.submit-btn{
+    color: #ffff;
+    background-color: #23CE6B;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+/* contact end */
+
+/* footer */
+#footer{
+    background-color: #2b2b2b;
+    padding: 30px 0;
+}
+#footer .navbar-brand{
+    font-size: 1.8rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+#footer .navbar-brand span{
+    color: #23CE6B;
+}
+#footer .mid{
+    display: flex;
+    justify-content: center;
+}
+#footer .mid img{
+    width: 20px;
+}
+#footer p{
+    color: #fff;
+    font-size: 16px;
+}
+#footer .social{
+    display: flex;
+    justify-content: flex-end;
+}
+#footer .social img{
+    width: 40px;
+}
+
+@media screen and (max-width: 567px) {
+    #footer .mid{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0px;
+        margin: 15px 0;
+    }
+    #footer .social{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 768px) {
+    #footer .mid{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0px;
+        margin: 15px 0;
+    }
+    #footer .social{
+        display: flex;
+        justify-content: flex-start;
+    }
 }
